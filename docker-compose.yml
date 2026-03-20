@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  price-monitor:
+    build: .
+    container_name: uninter-price-monitor
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./.env:/app/.env:ro
+    environment:
+      - TZ=America/Sao_Paulo
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

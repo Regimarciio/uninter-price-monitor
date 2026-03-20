@@ -1,0 +1,58 @@
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Banco de dados
+*.db
+*.db-journal
+/data/
+data/
+
+# Arquivos de ambiente
+.env
+*.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+/data/*.png
+/data/*.html
+
+# Arquivos temporários
+*~
+*.tmp
+*.bak
+*.old
+
+# Arquivos de teste
+app/test_*.py
+test_*.py
+*_test.py
+force_*.py
+check_*.py
+find_*.py
+get_*.py
+update_*.sh
+
+# Executáveis
+*.exe
+*.bat
+*.sh
+!update_chromedriver.shcomando_importantes.txt
+comando_importantes.txt
